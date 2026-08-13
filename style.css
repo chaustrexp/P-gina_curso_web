@@ -13,3 +13,8 @@ h1 {
 p {
     line-height: 1.6;
 }
+
+#abot { /* Error: debería ser #about */
+    padding: 3rem 2rem;
+    background-color: #fff;
+}
