@@ -14,7 +14,7 @@ p {
     line-height: 1.6;
 }
 
-#abot { /* Error: debería ser #about */
+#about { /* Corregido */
     padding: 3rem 2rem;
-    background-color: #fff;
+    background: #ecf0f1;
 }
