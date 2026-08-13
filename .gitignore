@@ -1,0 +1,5 @@
+config.env
+notes.txt
+temp/
+.DS_Store
+Thumbs.db
