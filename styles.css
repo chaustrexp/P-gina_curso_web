@@ -117,112 +117,30 @@ section p {
   box-shadow: none;
 }
 
-/* PROYECTOS GRID */
-.proyectos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.2rem;
+/* PROYECTOS */
+.proyectos-lista {
+  list-style: none;
+  padding: 0;
 }
 
-.proyecto-card {
+.proyectos-lista li {
   background: white;
   border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  transition: box-shadow 0.2s, transform 0.2s;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+  transition: box-shadow 0.2s;
 }
 
-.proyecto-card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-  transform: translateY(-3px);
+.proyectos-lista li:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.proyecto-card.proximamente {
-  opacity: 0.6;
-}
-
-.proyecto-card h3 {
-  font-size: 1rem;
-  color: #1a1a2e;
-}
-
-.proyecto-card p {
-  font-size: 0.88rem;
-  color: #666;
-  flex-grow: 1;
-}
-
-.proyecto-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
-
-.proyecto-tags span {
+/* ABOUT */
+#about {
+  padding: 3rem 2rem;
   background: #ecf0f1;
-  color: #1a1a2e;
-  padding: 0.2rem 0.6rem;
-  border-radius: 20px;
-  font-size: 0.78rem;
-}
-
-.proyecto-link {
-  display: inline-block;
-  margin-top: 0.4rem;
-  color: #e94560;
-  font-size: 0.88rem;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.2s;
-}
-
-.proyecto-link:hover {
-  color: #1a1a2e;
-}
-
-/* EXPERIENCIA - TIMELINE */
-.timeline {
-  border-left: 3px solid #e94560;
-  padding-left: 1.5rem;
-  margin-left: 0.5rem;
-}
-
-.timeline-item {
-  position: relative;
-  margin-bottom: 1.8rem;
-}
-
-.timeline-item::before {
-  content: '';
-  width: 12px;
-  height: 12px;
-  background: #e94560;
-  border-radius: 50%;
-  position: absolute;
-  left: -1.95rem;
-  top: 0.3rem;
-}
-
-.timeline-fecha {
-  font-size: 0.8rem;
-  color: #e94560;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 0.3rem;
-}
-
-.timeline-contenido h3 {
-  font-size: 1rem;
-  color: #1a1a2e;
-  margin-bottom: 0.3rem;
-}
-
-.timeline-contenido p {
-  font-size: 0.9rem;
-  color: #666;
 }
 
 /* CONTACTO */
@@ -233,38 +151,22 @@ section p {
 }
 
 #contacto h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
-#contacto > p {
-  margin-bottom: 1rem;
-  color: #555;
-}
-
-.contacto-lista {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-
-.contacto-lista li {
+#contacto p {
+  margin-bottom: 0.6rem;
   font-size: 0.95rem;
   color: #444;
-  background: white;
-  padding: 0.7rem 1rem;
-  border-radius: 8px;
-  border: 1px solid #ddd;
 }
 
-.contacto-lista a {
+#contacto a {
   color: #e94560;
   text-decoration: none;
   transition: color 0.2s;
 }
 
-.contacto-lista a:hover {
+#contacto a:hover {
   color: #1a1a2e;
   text-decoration: underline;
 }
